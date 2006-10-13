@@ -1,4 +1,5 @@
 Summary:	Transparent editing of GPG public/private-key encrypted files
+Summary(pl):	Przezroczysta edycja plików szyfrowaych kluczami publicznymi/prywatnymi GPG
 Name:		vim-plugin-gnupg
 Version:	1.27
 Release:	1
@@ -14,12 +15,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_vimdatadir	%{_datadir}/vim/vimfiles
 
 %description
-This script implements transparent editing of gpg public/private-key
-encrypted files. The filename must have a ".gpg" suffix. When opening such
-a file the content is decrypted, when opening a new file the script will
-ask for the recipients of the encrypted file. The file content will be
-encrypted to all recipients before it is written. The script turns off
-viminfo and swapfile to increase security.
+This script implements transparent editing of GPG public/private-key
+encrypted files. The filename must have a ".gpg" suffix. When opening
+such a file the content is decrypted, when opening a new file the
+script will ask for the recipients of the encrypted file. The file
+content will be encrypted to all recipients before it is written. The
+script turns off viminfo and swapfile to increase security.
+
+%description -l pl
+Ten skrypt implementuje przezroczyst± edycjê plików szyfrowanych
+kluczami publicznymi/prywatnymi GPG. Nazwa pliku musi mieæ przyrostek
+".gpg". Przy otwieraniu takiego pliku zawarto¶æ jest odszyfrowywana,
+natomiast przy tworzeniu nowego pliku skrypt pyta o adresatów
+zaszyfrowanego pliku. Przed zapisem zawarto¶æ pliku zostaje
+zaszyfrowana dla wszystkich adresatów. Aby zwiêkszyæ bezpieczeñstwo
+skrypt wy³±cza viminfo i swapfile.
 
 %prep
 
