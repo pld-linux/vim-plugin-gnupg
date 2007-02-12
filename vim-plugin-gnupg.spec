@@ -1,5 +1,5 @@
 Summary:	Transparent editing of GPG public/private-key encrypted files
-Summary(pl.UTF-8):   Przezroczysta edycja plików szyfrowaych kluczami publicznymi/prywatnymi GPG
+Summary(pl.UTF-8):	Przezroczysta edycja plików szyfrowaych kluczami publicznymi/prywatnymi GPG
 Name:		vim-plugin-gnupg
 Version:	1.27
 Release:	1
