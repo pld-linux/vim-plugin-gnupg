@@ -8,7 +8,8 @@ Group:		Applications/Editors/Vim
 Source0:	gnupg.vim
 # Source0-md5:	b7d56cdb65183bb12fac04316a244297
 URL:		http://vim.sourceforge.net/scripts/script.php?script_id=661
-Requires:	vim >= 4:6.0
+# for _vimdatadir existence
+Requires:	vim-rt >= 4:6.3.058-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
